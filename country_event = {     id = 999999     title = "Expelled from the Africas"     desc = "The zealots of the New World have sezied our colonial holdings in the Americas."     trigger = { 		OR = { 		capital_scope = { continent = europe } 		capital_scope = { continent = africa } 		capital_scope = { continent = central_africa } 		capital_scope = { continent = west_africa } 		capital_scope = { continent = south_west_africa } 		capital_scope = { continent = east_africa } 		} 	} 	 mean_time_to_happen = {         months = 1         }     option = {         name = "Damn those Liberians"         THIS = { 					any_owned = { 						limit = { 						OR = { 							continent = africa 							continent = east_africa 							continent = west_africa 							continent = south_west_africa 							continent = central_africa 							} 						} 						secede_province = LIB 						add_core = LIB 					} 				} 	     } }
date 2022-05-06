@@ -1,0 +1,37 @@
+country_event = { #Integrate a Continent
+    id = 999999
+    title = "Expelled from the Africas"
+    desc = "The zealots of the New World have sezied our colonial holdings in the Americas."
+    trigger = {
+		OR = {
+		capital_scope = { continent = europe }
+		capital_scope = { continent = africa }
+		capital_scope = { continent = central_africa }
+		capital_scope = { continent = west_africa }
+		capital_scope = { continent = south_west_africa }
+		capital_scope = { continent = east_africa }
+		}
+	}
+	 mean_time_to_happen = {
+        months = 1
+        }
+    option = {
+        name = "Damn those Liberians"
+        THIS = {
+					any_owned = {
+						limit = {
+						OR = {
+							continent = africa
+							continent = east_africa
+							continent = west_africa
+							continent = south_west_africa
+							continent = central_africa
+							}
+						}
+						secede_province = LIB
+						add_core = LIB
+					}
+				}
+	
+    }
+}
