@@ -1,0 +1,32 @@
+trail_of_blacks = {
+		picture = trail_of_tears
+        potential = {
+            OR = {
+                capital_scope = { continent = north_america }
+		    capital_scope = { continent = south_america }
+		capital_scope = { continent = europe }
+            }
+            NOT = {
+                has_country_flag = marching_on_the_trail_of_blacks
+            }
+        }
+
+        allow = {
+            is_vassal = no
+        }
+
+        effect = {
+            any_pop = {
+                limit = {
+                    is_culture_group = african_diaspora_cultures
+                }
+                move_pop = 1887
+			
+            }
+            set_country_flag = marching_on_the_trail_of_blacks
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
