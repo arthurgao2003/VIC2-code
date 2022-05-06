@@ -1,0 +1,15 @@
+gateway_to_harbor = {
+	immigrant_attract = 1
+	population_growth = 0.002
+	icon = 9
+}
+
+small_baby_boom = {
+    population_growth = 0.001
+    icon = 19
+}
+
+baby_boom = {
+    population_growth = 0.005
+    icon = 19
+}
